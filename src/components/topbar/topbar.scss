@@ -6,12 +6,12 @@
   align-items: center;
   position: sticky;
   top: 0px;
+  color: var(--text-color);
   .topbarLeft {
     flex: 3;
     .logo {
       font-size: 24px;
       margin-left: 20px;
-      color: var(--text-color);
       cursor: pointer;
       font-weight: bold;
     }
@@ -65,7 +65,7 @@
           border-radius: 50%;
           position: absolute;
           top: -5px;
-          right: -9px;
+          right: -5px;
           display: flex;
           align-items: center;
           justify-content: center;

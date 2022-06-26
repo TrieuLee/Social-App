@@ -3,5 +3,5 @@ import React from "react";
 import "./feed.scss";
 
 export default function Feed() {
-  return <div>Feed</div>;
+  return <div className="feed">Feed</div>;
 }
