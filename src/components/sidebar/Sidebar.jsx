@@ -13,6 +13,7 @@ import {
 
 //import style
 import "./sidebar.scss";
+import Friend from "../friend/Friend";
 
 export default function Sidebar() {
   return (
@@ -55,54 +56,11 @@ export default function Sidebar() {
         <button className="sidebarBtn">Show more</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img
-              src="/assets/avatars/2.jpg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Thien Phuc</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/avatars/2.jpg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Thien Phuc</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/avatars/2.jpg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Thien Phuc</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/avatars/2.jpg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Thien Phuc</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/avatars/2.jpg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Thien Phuc</span>
-          </li>
-          <li className="sidebarFriend">
-            <img
-              src="/assets/avatars/2.jpg"
-              alt=""
-              className="sidebarFriendImg"
-            />
-            <span className="sidebarFriendName">Thien Phuc</span>
-          </li>
+          <Friend />
+          <Friend />
+          <Friend />
+          <Friend />
+          <Friend />
         </ul>
       </div>
     </div>

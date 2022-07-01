@@ -1,7 +1,8 @@
 import "./styles/index.scss";
+//import component
 import Home from "./pages/home/Home";
+//import style
 
-import { Person, PersonSearch } from "@mui/icons-material";
 function App() {
   return (
     <div>

@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .topbarContainer {
   height: 50px;
   width: 100%;
@@ -6,6 +8,7 @@
   align-items: center;
   position: sticky;
   top: 0px;
+  z-index: 999;
   color: var(--text-color);
   .topbarLeft {
     flex: 3;
@@ -77,8 +80,6 @@
   .topbarImg {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
+    @include avatar();
   }
 }
