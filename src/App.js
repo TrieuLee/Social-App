@@ -1,13 +1,14 @@
 import "./styles/index.scss";
+import { BrowserRouter } from "react-router-dom";
 //import component
-import Home from "./pages/home/Home";
-//import style
+import Router from "./Router";
 
+//import style
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 

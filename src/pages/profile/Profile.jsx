@@ -29,9 +29,7 @@ const Profile = () => {
             </div>
             <div className="profileInfo">
               <h4 className="profileInfoName">Lê Hải Triều</h4>
-              <span className="profileInfoDesv">
-                Ghé thăm 1 lần - Say đắm 1 đời!
-              </span>
+              <span className="profileInfoDesv">ĐST - U are my home</span>
             </div>
           </div>
           <div className="profileRightBottom">
