@@ -18,11 +18,7 @@ export default function Post() {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img
-              src="/assets/avatars/2.jpg"
-              alt=""
-              className="postProfileImg"
-            />
+            <img src={PF + "avatars/2.jpg"} alt="" className="postProfileImg" />
             <span className="postUserName">Thien Phuc</span>
             <span className="postDate">5 phút trước</span>
           </div>
@@ -32,7 +28,7 @@ export default function Post() {
         </div>
         <div className="postCenter">
           <span className="postText">Đại Hội Đoàn khoa CNTT Nhiệm kỳ XIV</span>
-          <img src="assets/posts/1.jpg" alt="" className="postImg" />
+          <img src={PF + "posts/1.jpg"} alt="" className="postImg" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
@@ -43,7 +39,7 @@ export default function Post() {
               className="likeIcon"
             />
             <img
-              src="assets/emotions/heart.jpg"
+              src={PF + "emotions/heart.jpg"}
               onClick={LikeHandler}
               alt=""
               className="likeIcon"

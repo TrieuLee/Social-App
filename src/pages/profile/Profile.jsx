@@ -8,6 +8,7 @@ import Rightbar from "../../components/rightbar/Rightbar";
 import "./profile.scss";
 
 const Profile = () => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <>
       <Topbar />
@@ -17,12 +18,12 @@ const Profile = () => {
           <div className="profileRightTop">
             <div className="profileCover">
               <img
-                src="assets/posts/1.jpg"
+                src={PF + "posts/1.jpg"}
                 alt=""
                 className="profileCoverImg"
               />
               <img
-                src="assets/avatars/1.jpg"
+                src={PF + "avatars/1.jpg"}
                 alt=""
                 className="profileUserImg"
               />

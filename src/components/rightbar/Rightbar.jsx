@@ -5,10 +5,11 @@ import "./rightbar.scss";
 
 export default function Rightbar({ profile }) {
   const HomeRightBar = () => {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     return (
       <>
         <div className="birthdayContainer">
-          <img src="assets/emotions/gift.jpg" alt="" className="birthdayImg" />
+          <img src={PF + "emotions/gift.jpg"} alt="" className="birthdayImg" />
           <span className="birthdayText">
             Hôm nay là sinh nhật của <b>Anh Kiệt</b> và <b>3 người khác</b>
           </span>
