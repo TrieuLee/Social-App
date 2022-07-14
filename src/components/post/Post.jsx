@@ -5,6 +5,7 @@ import { MoreVert } from "@mui/icons-material";
 import "./post.scss";
 
 export default function Post() {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [like, setLike] = useState(0);
   const [isLiked, setIsLiked] = useState(true);
 
@@ -36,7 +37,7 @@ export default function Post() {
         <div className="postBottom">
           <div className="postBottomLeft">
             <img
-              src="assets/emotions/like.jpg"
+              src={PF + "emotions/like.jpg"}
               onClick={LikeHandler}
               alt=""
               className="likeIcon"
