@@ -9,14 +9,17 @@
   position: sticky;
   top: 0px;
   z-index: 999;
-  color: var(--text-color);
+  color: var(--text-color) !important;
   .topbarLeft {
     flex: 3;
-    .logo {
-      font-size: 24px;
-      margin-left: 20px;
-      cursor: pointer;
-      font-weight: bold;
+    .ulrLogo {
+      color: var(--text-color) !important;
+      .logo {
+        font-size: 24px;
+        margin-left: 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
     }
   }
   .topbarCenter {

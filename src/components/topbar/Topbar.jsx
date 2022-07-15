@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 //import style
 import "./topbar.scss";
 //import icon
@@ -8,7 +9,9 @@ const Topbar = () => {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">AlohaSocial</span>
+        <Link className="ulrLogo" to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">AlohaSocial</span>
+        </Link>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
