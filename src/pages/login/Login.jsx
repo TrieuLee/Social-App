@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 
 //import style
 import "./login.scss";
 
 export default function Login() {
+  const email = useRef();
+  const password = useRef();
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log(email.current.value);
+  };
   return (
     <div className="login">
       <div className="loginWrapper">
@@ -14,19 +20,30 @@ export default function Login() {
           </span>
         </div>
         <div className="loginRight">
-          <div className="loginBox">
-            <input placeholder="Email" type="email" className="loginInput" />
+          <form className="loginBox" onSubmit={handleClick}>
+            <input
+              placeholder="Email"
+              type="email"
+              className="loginInput"
+              ref={email}
+              required
+            />
             <input
               placeholder="Mật khẩu"
               type="password"
               className="loginInput"
+              ref={password}
+              required
+              minLength="8"
             />
-            <button className="loginButon">Đăng nhập</button>
+            <button className="loginButon" type="submit">
+              Đăng nhập
+            </button>
             <span className="loginForgot">Quên mật khẩu?</span>
             <button className="loginRegisterButton">
-              Create a New Account
+              Đăng ký Tài khoản mới
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
